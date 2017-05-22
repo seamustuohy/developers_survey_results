@@ -1,0 +1,59 @@
+{% if include.lang == 'en' %}
+    {% assign lang_region = "By Region" %}
+    {% assign lang_experience = "By Experience" %}
+    {% assign lang_title = "Developer Challenges Survey" %}
+    {% assign lang_age = "By Age" %}
+    {% assign lang_about = "About" %}
+{% elsif include.lang == 'es' %}
+    {% assign lang_region = "Por región" %}
+    {% assign lang_experience = "Por experiencia" %}
+    {% assign lang_title = "Encuesta sobre desafíos del desarrollador" %}
+    {% assign lang_age = "Por edad" %}
+    {% assign lang_about = "Sobre nosotros" %}
+{% elsif include.lang == 'fr' %}
+    {% assign lang_region = "Par région" %}
+    {% assign lang_experience = "Par expérience" %}
+    {% assign lang_title = "Sondage sur les défis des développeurs" %}
+    {% assign lang_age = "Par âge" %}
+    {% assign lang_about = "À propos de nous" %}
+{% elsif include.lang == 'fa' %}
+    {% assign lang_region = "توسط منطقه" %}
+    {% assign lang_experience = "با تجربه" %}
+    {% assign lang_title = "نظز سنجی چالش‌های توسعه دهندگان" %}
+    {% assign lang_age = "توسط سن" %}
+    {% assign lang_about = "دربارهی ما" %}
+{% elsif include.lang == 'ru' %}
+    {% assign lang_region = "По регионам" %}
+    {% assign lang_experience = "По опыту" %}
+    {% assign lang_title = "Исследование проблем разработчика ПО" %}
+    {% assign lang_age = "По возрасту" %}
+    {% assign lang_about = "О нас" %}
+{% elsif include.lang == 'zh' %}
+    {% assign lang_region = "按地区" %}
+    {% assign lang_experience = "按经验" %}
+    {% assign lang_title = "开发者难题调查" %}
+    {% assign lang_age = "按年龄" %}
+    {% assign lang_about = "关于我们" %}
+{% endif %}
+
+
+<div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+    <header class="mdl-layout__header mdl-layout__header--waterfall is-casting-shadow">
+        <div class="mdl-layout__header-row">
+            <div class="mdl-layout__header-row color-bar">
+                <span class="mdl-layout-title">{{ lang_title }}</span>
+            </div>
+        </div>
+        <div class="mdl-layout__header-row">
+            <div class="docs-navigation__container mdl-js-ripple-effect mdl-color--primary-dark mdl-js-ripple-effect--ignore-events ">
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#" onclick="region();">{{ lang_region }}</a>
+                    <a class="mdl-navigation__link" href="#" onclick="age();">{{ lang_age }}</a>
+                    <a class="mdl-navigation__link" href="#" onclick="experience();">{{ lang_experience }}</a>
+                    <div class="spacer"></div>
+                    <a class="mdl-navigation__link" href="https://guardianproject.info/">{{ lang_about }}</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+</div>
