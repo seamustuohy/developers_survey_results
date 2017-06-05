@@ -110,6 +110,7 @@ ul {
 .vega-actions a {
     margin-right: 5px;
 }
+
 #view-source {
     position: fixed;
     display: block;
@@ -119,32 +120,40 @@ ul {
     margin-bottom: 40px;
     z-index: 900;
 }
+
 .mdl-card .mdl-card__supporting-text > h4:first-child {
     margin-bottom: 24px;
     margin-top: 24px;
 }
+
 .color-bar {
     background-color: #3F51B5;
 }
+
 .demo-charts {
     align-items: center;
     padding-right: 32px;
 }
+
 .section--center {
     margin-bottom: 48px;
 }
+
 section.section--footer {
     padding: 64px 0;
     margin: 0 -8px -8px -8px;
 }
+
 .para_link {
     color: inherit;
     text-decoration: none;
 }
+
 .para_link:hover, .para_link:focus {
                       color: #2A6496;
                       text-decoration: underline;
                   }
+
 .mdl-navigation__link {
     font-weight: 500;
     font-size: 13px;
@@ -155,13 +164,21 @@ section.section--footer {
     box-sizing: border-box;
     border-bottom: 3px solid transparent
 }
+
 body {
     background-color: linen;
 }
+
 .docs-navigation__container {
     width: 100%;
 }
+
 div {
     display: block;
     margin: auto;
+}
+
+.mdl-grid.demo-charts. {
+    margin-left: 0px;
+    margin-right: 0px;
 }
